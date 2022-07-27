@@ -4,6 +4,34 @@
     margin: 0;
     
 }
+/*p al lado de hover*/
+.parrafo-div {
+    margin: 20px;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 191, 255, 0.39);
+}
+.wrapper {
+    font-size: 1em;
+    width: 25vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja {
+    background-color: rgba(255, 20, 145, 0.582);
+    height: 100px;
+    width: 100px;
+    transition-delay: .5s;
+    transition-duration: .5s;
+    transition-timing-function: ease ;
+}
+.caja:hover {
+    background-color: rgba(137, 43, 226, 0.445);
+    transform: rotate(50deg);
+   
+}
 .contenido {
     background-color: aqua;
     height: 300px;
