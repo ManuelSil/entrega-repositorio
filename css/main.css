@@ -92,7 +92,80 @@ font-size: 3em;
      margin: 10px;
  
  }
+ /* Estilos header calzado*/
+ .header-calzado {
+    background-color: darkkhaki;
+    
+    padding: 48px 24px;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ /*main calzado*/
+ main {
+    background-color: darkcyan;
+
+    display: grid;
+    grid-template-areas: 
+    "about aside"
+    "portfolio aside"
+    ;    
+ }
+ .about-oferta {
+    grid-area: about;
+    text-align: center;
+ }
+ .about-oferta p {
+    max-width: 500px;
+    margin: auto;
+ }
+ .section-oferta {
+    grid-area: portfolio;
+    text-align: center;
+ }
+ .lista-oferta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .aside-oferta {
+    grid-area: aside;
+    background-color: crimson;
+ }
+ .aside-oferta ul {
+    list-style-type:none;
+    text-align: center;
+ }
+ /*footer calzado*/
+.footer-calzado {
+    text-align: center;
+}
+ @media screen and (max-width: 768px) {
+    main {
+        background-color: darkcyan;
+    
+        display: grid;
+        grid-template-areas: 
+        "about"
+        "portfolio"
+        "aside"
+ }
+ .aside-oferta ul li {
+    display: inline-block;
+ }
+}
+ @media  screen and (max-width: 425) {
+    .header-calzado img {
+        display: none;
+     }
+     .header-calzado div {
+        text-align: center;
+     }
+     
+     }
+ 
+ 
 
 /* media mas chico*/
 @media screen and  (max-width:320px) 
@@ -103,4 +176,11 @@ font-size: 3em;
     padding: 20px ;
     background-color:rgba(153, 50, 204, 0.452);
  }
+ .header-calzado img {
+    display: none;
+ }
+ .header-calzado div {
+    text-align: center;
+ }
+
 }
