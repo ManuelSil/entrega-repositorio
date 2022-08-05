@@ -1,0 +1,53 @@
+@media screen and (max-width: 768px) {
+    main {
+        background-color: darkcyan;
+    
+        display: grid;
+        grid-template-areas: 
+        "about"
+        "portfolio"
+        "aside"
+ }
+ .aside-oferta { 
+        ul { 
+            li {
+    display: inline-block;
+    }
+    }
+ }
+}
+ @media  screen and (max-width: 425) {
+    .header-calzado { 
+            img {
+        display: none;
+     }
+    }
+     .header-calzado { 
+                div {
+        text-align: center;
+     }
+    }
+     }
+ 
+ 
+
+/* media mas chico*/
+@media screen and  (max-width:320px) 
+{
+  .div-input {
+    height: 750px;
+    margin: 20px ;
+    padding: 20px ;
+    background-color:rgba(153, 50, 204, 0.452);
+ }
+ .header-calzado { 
+        img {
+    display: none;
+ }
+}
+ .header-calzado { 
+        div {
+    text-align: center;
+ }
+ }
+}

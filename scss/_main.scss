@@ -1,25 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-p-1 m-1 {
-    margin: 2em !important;
-    padding: 2em!important;
-}
 /*estilo-imagen*/
 .imagen-oferta {
     text-align: center;
 }
-footer {
-    
-    color: darkblue;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    text-align: center;
-    padding: 60px 10px 60px 10px;
-    background-color:lightcyan
-}
+
+
 .contenido {
     background-color: aqua;
     height: 300px;
@@ -28,11 +12,13 @@ footer {
     grid-template-rows: repeat(3,1fr);
 
 }
-.contenido div {
+.contenido {
+            div {
 background-color: blue;
 border: solid 1em green;
 text-align: center;
 font-size: 3em;
+}
 }
 .div-input {
     margin: 20px 60px 20px 60px;
@@ -53,7 +39,8 @@ font-size: 3em;
     "div div div"
     "footer footer footer";
 }
-    .contenedor div {
+    .contenedor { 
+        div {
         margin-left: 10px ;
         margin-right: 10px;
      
@@ -61,6 +48,7 @@ font-size: 3em;
          background-color: blueviolet;
          border:solid 1px red
     }
+}
 
 .item-a {
     grid-area: header;
@@ -116,10 +104,12 @@ font-size: 3em;
     grid-area: about;
     text-align: center;
  }
- .about-oferta p {
+ .about-oferta { 
+        p {
     max-width: 500px;
     margin: auto;
  }
+}
  .section-oferta {
     grid-area: portfolio;
     text-align: center;
@@ -133,54 +123,13 @@ font-size: 3em;
     grid-area: aside;
     background-color: crimson;
  }
- .aside-oferta ul {
+ .aside-oferta { 
+        ul {
     list-style-type:none;
     text-align: center;
- }
+    }
+    }
  /*footer calzado*/
 .footer-calzado {
     text-align: center;
-}
- @media screen and (max-width: 768px) {
-    main {
-        background-color: darkcyan;
-    
-        display: grid;
-        grid-template-areas: 
-        "about"
-        "portfolio"
-        "aside"
- }
- .aside-oferta ul li {
-    display: inline-block;
- }
-}
- @media  screen and (max-width: 425) {
-    .header-calzado img {
-        display: none;
-     }
-     .header-calzado div {
-        text-align: center;
-     }
-     
-     }
- 
- 
-
-/* media mas chico*/
-@media screen and  (max-width:320px) 
-{
-  .div-input {
-    height: 750px;
-    margin: 20px ;
-    padding: 20px ;
-    background-color:rgba(153, 50, 204, 0.452);
- }
- .header-calzado img {
-    display: none;
- }
- .header-calzado div {
-    text-align: center;
- }
-
 }
